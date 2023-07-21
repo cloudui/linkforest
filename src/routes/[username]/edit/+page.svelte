@@ -75,14 +75,14 @@
     }
   
 </script>
-  
+ 
+<div class="mb-12 pb-12">
   <main class="max-w-xl mx-auto">
     {#if $userData?.username == $page.params.username}
       <h1 class="mx-2 text-2xl font-bold mt-8 mb-4 text-center">
         Edit your Profile
       </h1>
 
-      <!-- INSERT sortable list here -->
       <!-- INSERT sortable list here -->
   <SortableList list={$userData?.links} on:sort={sortList} let:item let:index>
     <div class="group relative">
@@ -121,7 +121,7 @@
             name="url"
             type="text"
             placeholder="URL"
-            class="input input-sm"
+            class="input input-sm mt-3"
             bind:value={$formData.url}
           />
           <div class="my-4">
@@ -154,3 +154,4 @@
       {/if}
     {/if}
   </main>
+</div>
