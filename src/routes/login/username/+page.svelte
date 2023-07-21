@@ -55,11 +55,11 @@
 
 <AuthCheck>
     {#if $userData?.username}
-        <p class="">
+        <p class="text-lg">
             Your username is <span class="font-bold text-green-400">@{$userData.username}</span>
         </p>
-        <p class="text-sm mb-3">(Usernames cannot be changed)</p>
-        <a class="btn btn-primary" href="/login/photo">Upload Profile Image</a>
+        <p class="text-sm">(Usernames cannot be changed)</p>
+        <a class="btn btn-primary mt-3" href="/login/photo">Upload Profile Image</a>
     {:else}
         <form class="w-2/5" on:submit|preventDefault={confirmUsername}>
             <input
