@@ -39,11 +39,11 @@
             username,
             photoURL: $user?.photoURL ?? null,
             published: true,
-            bio: 'I am the Walrus',
+            bio: "Don't sue me, L*nktree",
             links: [
                 {
-                    title: 'Test Link',
-                    url: 'https://kung.foo',
+                    title: 'Sample Link',
+                    url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
                     icon: 'custom'
                 }
             ]
