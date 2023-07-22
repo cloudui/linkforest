@@ -46,7 +46,7 @@
           />
           {#if uploading}
             <p>Uploading...</p>
-            <progress class="progress progress-info w-56 mt-6" />
+            <progress class="progress progress-info w-56 mt-6 mx-auto" />
           {/if}
         </div>
       </form>
