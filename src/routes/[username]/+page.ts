@@ -17,7 +17,7 @@ export const load = (async ({ params }) => {
     const data = snapshot.docs[0]?.data();
 
     if (!exists) {
-        throw error(404, "that user does not exist!");
+        throw error(404, "That user does not exist!");
     }
 
     if (!data.published) {
@@ -28,6 +28,10 @@ export const load = (async ({ params }) => {
         username: data.username,
         photoURL: data.photoURL,
         bio: data.bio,
-        links: data.links,
+        links: data.links ?? [],
+        // SEO
+        title: `@${data.username} | LinkForest`,
+        description: data.bio ?? `@${data.username}'s portfolio`,
+        imageUrl: data.photoURL ?? "/demo.png",
     };
 }) satisfies PageLoad;
