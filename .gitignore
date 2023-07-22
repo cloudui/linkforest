@@ -11,3 +11,6 @@ vite.config.ts.timestamp-*
 service-account.json
 .env
 firebase-debug.log
+.firebase/
+firebase-config.js
+src/lib/firebaseConfig.ts
