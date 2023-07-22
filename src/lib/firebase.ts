@@ -13,9 +13,9 @@ import { firebaseConfig } from "./firebaseConfig";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-console.log(firebaseConfig)
 
 // Initialize Firebase
+
 export const app = initializeApp(firebaseConfig);
 export const db = getFirestore();
 // export const analytics = getAnalytics(app);
